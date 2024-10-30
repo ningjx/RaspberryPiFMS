@@ -21,18 +21,18 @@ namespace RaspberryPiClient
         public MainForm()
         {
             InitializeComponent();
-            gMapControl1.MapProvider = AMapSateliteProvider.Instance;
-            GMaps.Instance.Mode = AccessMode.ServerAndCache;
+            //gMapControl1.MapProvider = AMapSateliteProvider.Instance;
+            //GMaps.Instance.Mode = AccessMode.ServerAndCache;
 
-            gMapControl1.MinZoom = 1;
-            gMapControl1.MaxZoom = 24;//指定最大最小zoom才可以缩放
-            gMapControl1.DragButton = MouseButtons.Left;
+            //gMapControl1.MinZoom = 1;
+            //gMapControl1.MaxZoom = 24;//指定最大最小zoom才可以缩放
+            //gMapControl1.DragButton = MouseButtons.Left;
             //data = TestEq.FlightData;
-            gMapControl1.Zoom = 10;
+           // gMapControl1.Zoom = 10;
             //gMapControl1.SetPositionByKeywords("北京");
-            gMapControl1.Position = new PointLatLng(39.9, 116.40);//纬度经度
-            GMapOverlay overlay = new GMapOverlay("Marker");
-            gMapControl1.Overlays.Add(overlay);
+            //gMapControl1.Position = new PointLatLng(39.9, 116.40);//纬度经度
+            //GMapOverlay overlay = new GMapOverlay("Marker");
+            //gMapControl1.Overlays.Add(overlay);
             //timer1.Start();
         }
 
@@ -62,7 +62,7 @@ namespace RaspberryPiClient
             b737PFD1.SetValues(rollBar.Value, pitchBar.Value, altBar.Value / 10F, speedBar.Value / 100F, vsBar.Value / 10F, headingBar.Value);
             textBox5.Text = headingBar.Value.ToString();
             a350ND1.SetValues(headingBar.Value, headingBar.Value);
-            gMapControl1.Bearing = headingBar.Value;
+            //gMapControl1.Bearing = headingBar.Value;
         }
 
         private void speedBar_Scroll(object sender, EventArgs e)
@@ -90,9 +90,9 @@ namespace RaspberryPiClient
             b737PFD1.SetValues(data.Attitude.Angle_X - 180, 180 - data.Attitude.Angle_Y, altBar.Value / 10F, speedBar.Value / 100F, vsBar.Value / 10F, data.Attitude.Angle_Z);
             a350ND1.SetValues(data.Attitude.Angle_Z, 0);
             b737EICAS1.SetValues(20, 60, 60, 50, 50, data.Attitude.Angle_Z, 0, 4.2F, 4.2F, 0, 0, 0, 0);
-            gMapControl1.Bearing = data.Attitude.Angle_Z;
+            //gMapControl1.Bearing = data.Attitude.Angle_Z;
             var a = Extends.GPSToGCJ(data.GPSData.Longitude / 1E7D, data.GPSData.Latitude / 1E7D);
-            gMapControl1.Position = a;
+            //gMapControl1.Position = a;
             label9.Text = data.GPSData.Latitude.ToString();//40
             label10.Text = data.GPSData.Longitude.ToString();
             label6.Text = a.Lng.ToString();

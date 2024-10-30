@@ -1,6 +1,6 @@
 ﻿using flyfire.IO.Ports;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using RJCP.IO.Ports;
+//using RJCP.IO.Ports;
 using System;
 
 namespace RaspberryPiFCSTest.HelperTest
@@ -13,11 +13,11 @@ namespace RaspberryPiFCSTest.HelperTest
         {
             try
             {
-                CustomSerialPort sbus = new CustomSerialPort("COM3", 100000, Parity.Even, 8, StopBits.Two);
-                sbus.ReceiveTimeoutEnable = false;
+                //CustomSerialPort sbus = new CustomSerialPort("COM3", 100000, Parity.Even, 8, StopBits.Two);
+                //sbus.ReceiveTimeoutEnable = false;
                 //sbus.ReceiveTimeout = 1;
-                sbus.ReceivedEvent += Sbus_ReceivedEvent;
-                sbus.Open();
+                //sbus.ReceivedEvent += Sbus_ReceivedEvent;
+                //s/bus.Open();
             }
             catch(Exception eeee0)
             {

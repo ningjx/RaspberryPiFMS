@@ -3,11 +3,6 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
 using System.Threading;
-using GMap.NET;
-using GMap.NET.MapProviders;
-using GMap.NET.WindowsForms;
-using RaspberryPiFCS;
-
 namespace TestConsole
 {
     //class Program

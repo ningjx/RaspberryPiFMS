@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using flyfire.IO.Ports;
 using RaspberryPiFCS.Interface;
-using RJCP.IO.Ports;
+using System.IO.Ports;
 
 namespace RaspberryPiFCS.Drivers
 {

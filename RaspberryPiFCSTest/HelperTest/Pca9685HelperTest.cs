@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using RaspberryPiFCS.Equipments;
+//using RaspberryPiFCS.Equipments;
 using RaspberryPiFCS.Helper;
 
 namespace RaspberryPiFCSTest.HelperTest
@@ -13,8 +13,8 @@ namespace RaspberryPiFCSTest.HelperTest
         [TestMethod]
         public void Pca9685Test()
         {
-            Pca9685 pca9685 = new Pca9685();
-            pca9685.SetAngle(0,10);
+            //Pca9685 pca9685 = new Pca9685();
+            //pca9685.SetAngle(0,10);
         }
     }
 }

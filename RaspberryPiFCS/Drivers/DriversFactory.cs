@@ -1,5 +1,5 @@
 ﻿using RaspberryPiFCS.Interface;
-using RJCP.IO.Ports;
+using System.IO.Ports;
 using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
